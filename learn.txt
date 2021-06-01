@@ -53,3 +53,23 @@ echo $row['id'];
 </html>
 
 5/25 mysql을 메모장으로 정리하고 깃허브 업로드 과정에서 더 공부를 했다.
+
+6/1 mysql 로그인 문제 발생 서비스에서 wampstackMySQL-1->시작 버튼을 눌러 극복했다.
+<ol>
+            <?php
+            echo file_get_contents("list.txt");
+            ?>
+</ol>
+
+라는 코드를
+
+<ol>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo '<li><a href = "http://localhost/inde.php?id=' . $row['id'] . ' ">' . $row['title'] . '</a></li>' . "\n";
+            }
+            ?>
+</ol>
+
+를 이용해 mysql을 이용한 구문을 넣어주었다. style.css에서도 padding값을 조절해주었다.
+
