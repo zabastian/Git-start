@@ -73,3 +73,21 @@ echo $row['id'];
 
 를 이용해 mysql을 이용한 구문을 넣어주었다. style.css에서도 padding값을 조절해주었다.
 
+
+6/02
+
+ <!-- echo file_get_contents($_GET['id'] . ".txt"); -->
+
+        <!-- 위 내용은 php에 저장되어있던 문장을 불러낸 것이고 아래쪽은 mysql monitor -->
+        <!-- 에서 적었던 내용을 불러낸것이다. -->
+
+        <?php
+        if (empty($_GET['id']) === false) {
+            $sql = 'SELECT * FROM topic WHERE id=' . $_GET['id'];
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            echo '<h2>' . $row['title'] . '</h2>';
+            echo $row['description'];
+        }
+
+        // title의 mysql에서 descripttion을 불러내었다.
