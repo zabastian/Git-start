@@ -126,3 +126,15 @@ mysql 구문을 실행하고 process.php 파일을 새로 만들어준다음($sq
 
 15.php를 만들어 sql을 가져오는 함수를 만들어 준ㄴ 다음 var_dump($result); 함수를 이용해
 참,거짓을 출력할 수 있도록 해줬다.
+
+06/12
+
+라이브러리 : 중복해서 사용되는 로직을 재사용 할 수 있도록 부품화 한 것
+
+06/14
+
+require("");의 php 태그를 이용해 정리해줬다,
+
+function db_init(){
+return $corn;}
+함수를 정의 해 inde.php 파일은 오류가 안 나왔지만 write.php가 오류발생
