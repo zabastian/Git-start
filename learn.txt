@@ -138,3 +138,9 @@ require("");의 php 태그를 이용해 정리해줬다,
 function db_init(){
 return $corn;}
 함수를 정의 해 inde.php 파일은 오류가 안 나왔지만 write.php가 오류발생
+
+06/15
+
+return 함수 입력 오류가 나옴 다시 visual studio 설정에서 재시작 후 오류고쳐짐
+라이브러리 함수공부, require을 통해 파일을 불러오고 다른 시스템에서 localhost,root,비밀번호를 바꾸는법을 간단하게 알아봄
+bootstrap을 이용해 외관 목차를 좀 더 보기좋게 만들었다.(부트 스트랩 코드 공부는 하지못함.)
