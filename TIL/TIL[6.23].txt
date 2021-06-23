@@ -1,0 +1,11 @@
+파이썬에서 자료형,연산자,랜덤함수 부분을 중점으로 공부했고
+공부 중 http://naver.com에서 //naver.com 출력 하는 예제가 있었는데
+/naver.com은 어떻게 출력할까 라는 의문을 가졌고 
+
+x="http://naver.com"
+l=x.index("/")
+p=x.index("/",l+1)
+y=x[p: ]
+print(y)
+
+라는 계산을 통해 /naver.com을 출력해 주었다.
