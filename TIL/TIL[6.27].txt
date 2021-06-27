@@ -1,0 +1,5 @@
+cabinet 함수에 대해 공부하였다.
+
+from random import *에서
+sample 함수를 쓰기위해 x=range(1,21)의 자료형을 
+리스트로 바꿔 사용해서 예제를 풀었다.
