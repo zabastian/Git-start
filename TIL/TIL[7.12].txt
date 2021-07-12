@@ -1,0 +1,17 @@
+코드업 문제 6033번이 좀 새로웠다.
+알파벳 다음 문자 출력을 위해 ord(input())을 사용해 다음 문자를 출력한다는 생각을 못했다.
+
+a, b = input().split()
+a = float(a)
+b = float(b)
+print("{:.3f}".format(a/b))
+
+라운드 함수 문제를 위와 같이도 풀어봄
+
+x = input().split()    # input().split()의 결과는 문자열 리스트
+m = map(int, x)        # 리스트의 요소를 int로 변환, 결과는 맵 객체
+a, b = m                # 맵 객체는 변수 여러 개에 저장할 수 있음
+
+라는 map이라는 리스트의 요소를 지정된 함수로 처리해주는 함수임으로 위의 예시도
+a,b = map(float,input().split())으로 사용이 가능하다,
+
